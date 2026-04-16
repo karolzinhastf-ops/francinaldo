@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Francinaldo Aprígio - Língua Portuguesa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .serif {
+            font-family: 'Lora', serif;
+        }
+        .bg-education {
+            background-color: #f8fafc;
+        }
+        .accent-line {
+            height: 4px;
+            width: 60px;
+            background: #2563eb;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="bg-education text-slate-800">
+
+    <!-- Navegação -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-blue-700 serif">Prof. Francinaldo Aprígio</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Início</a>
+                        <a href="#sobre" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Sobre</a>
+                        <a href="#formacao" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Formação</a>
+                        <a href="#missao" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Missão</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-2">
+            <a href="#inicio" class="block text-slate-600 py-2">Início</a>
+            <a href="#sobre" class="block text-slate-600 py-2">Sobre</a>
+            <a href="#formacao" class="block text-slate-600 py-2">Formação</a>
+            <a href="#missao" class="block text-slate-600 py-2">Missão</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative bg-white py-20 lg:py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">
+                    Educador & Mestre em Letras
+                </span>
+                <h1 class="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight serif mb-6">
+                    A educação como instrumento de <span class="text-blue-600">transformação social</span>.
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl">
+                    Professor de Língua Portuguesa com 30 anos de dedicação ao ensino nas redes estadual e municipal, transformando vidas através das letras e do conhecimento.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#sobre" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg shadow-blue-200 hover:bg-blue-700 transition-all">Conheça minha história</a>
+                    <a href="#contato" class="px-8 py-3 border border-slate-300 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-all">Entrar em contato</a>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto bg-slate-200 rounded-2xl rotate-3 shadow-2xl flex items-center justify-center overflow-hidden border-8 border-white">
+                    <div class="text-slate-400 text-center p-8">
+                         <i class="fas fa-user-tie text-8xl mb-4"></i>
+                         <p class="text-sm">Francinaldo Aprígio dos Santos</p>
+                    </div>
+                </div>
+                <!-- Decoração -->
+                <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                <div class="absolute -top-6 -right-6 w-24 h-24 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold serif">Trajetória e Valores</h2>
+                <div class="accent-line mx-auto"></div>
+            </div>
+            <div class="prose prose-lg mx-auto text-slate-600 leading-relaxed space-y-6">
+                <p>
+                    Francinaldo Aprígio dos Santos construiu sua história com base nos valores de uma família simples, que sempre acreditou no poder da educação como base fundamental para a mudança. Essa inspiração foi o combustível para decidir dedicar sua vida ao magistério.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 my-12">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                        <i class="fas fa-clock text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">30 Anos de Experiência</h3>
+                        <p class="text-sm">Três décadas de compromisso ininterrupto com o ensino público e municipal.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                        <i class="fas fa-book-reader text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">Compromisso Real</h3>
+                        <p class="text-sm">Busca constante por aperfeiçoamento e novas metodologias de ensino.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação Section -->
+    <section id="formacao" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-16 items-start">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold serif mb-6">Excelência Acadêmica</h2>
+                    <p class="text-slate-600 mb-8">
+                        A formação contínua é o pilar de uma educação de qualidade. Minha especialização e mestrado permitem uma visão profunda sobre a linguagem e seu impacto na sociedade.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-700"><strong>Mestrado em Letras:</strong> Fortalecendo a prática docente com base em pesquisa acadêmica.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-700"><strong>Especialização:</strong> Língua, Linguística e Literatura.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1 grid grid-cols-1 gap-4">
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-blue-600">
+                        <h4 class="font-bold text-lg">Mestre em Letras</h4>
+                        <p class="text-slate-500 text-sm">Pós-Graduação Stricto Sensu</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-blue-400">
+                        <h4 class="font-bold text-lg">Especialista em Literatura</h4>
+                        <p class="text-slate-500 text-sm">Pós-Graduação Lato Sensu</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-blue-300">
+                        <h4 class="font-bold text-lg">Linguística e Ensino</h4>
+                        <p class="text-slate-500 text-sm">Pesquisa e Prática</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missão Section -->
+    <section id="missao" class="py-20 bg-blue-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <i class="fas fa-quote-left text-4xl text-blue-300 mb-8"></i>
+            <h2 class="text-3xl md:text-4xl font-bold serif italic mb-8">
+                "A docência não é apenas uma profissão, mas uma missão de vida. Minha maior realização está em perceber como a educação pode abrir portas e transformar realidades."
+            </h2>
+            <div class="w-16 h-1 bg-blue-400 mx-auto mb-6"></div>
+            <p class="text-blue-100 uppercase tracking-widest text-sm font-semibold">Prof. Francinaldo Aprígio</p>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold serif mb-4">Vamos conversar?</h2>
+            <p class="text-slate-600 mb-12">Para parcerias, palestras ou projetos educacionais, sinta-se à vontade para entrar em contato.</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#" class="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-slate-200 hover:border-blue-400 transition-all">
+                    <i class="fab fa-linkedin text-blue-600 text-2xl"></i>
+                    <span class="font-medium">LinkedIn</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-slate-200 hover:border-blue-400 transition-all">
+                    <i class="fas fa-envelope text-red-500 text-2xl"></i>
+                    <span class="font-medium">E-mail Profissional</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-slate-200 hover:border-blue-400 transition-all">
+                    <i class="fab fa-instagram text-pink-500 text-2xl"></i>
+                    <span class="font-medium">Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-sm">
+                &copy; <span id="year"></span> Francinaldo Aprígio dos Santos. Todos os direitos reservados.
+            </p>
+            <p class="text-slate-400 text-xs mt-2 italic">Língua Portuguesa: A arte de educar com palavras.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
