@@ -27,35 +27,33 @@
             background: #2563eb;
             margin-top: 8px;
         }
-        /* Garantir que a imagem preencha o container */
-        .photo-container img {
+        /* Estilo da foto para garantir que ela preencha o espaço sem distorcer */
+        .photo-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
     </style>
 </head>
 <body class="bg-education text-slate-800">
 
     <!-- Navegação -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0">
                     <span class="text-xl font-bold text-blue-700 serif">Prof. Francinaldo Aprígio</span>
                 </div>
-                <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#inicio" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Início</a>
                         <a href="#sobre" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Sobre</a>
                         <a href="#formacao" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Formação</a>
-                        <a href="#missao" class="text-slate-600 hover:text-blue-600 px-3 py-2 transition-colors">Missão</a>
                     </div>
                 </div>
-                <!-- Mobile Button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-slate-600 p-2 focus:outline-none" aria-label="Abrir Menu">
+                    <button id="mobile-menu-button" class="text-slate-600 p-2 focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -63,127 +61,104 @@
         </div>
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-2">
-            <a href="#inicio" class="block text-slate-600 py-2 hover:bg-slate-50 rounded px-2">Início</a>
-            <a href="#sobre" class="block text-slate-600 py-2 hover:bg-slate-50 rounded px-2">Sobre</a>
-            <a href="#formacao" class="block text-slate-600 py-2 hover:bg-slate-50 rounded px-2">Formação</a>
-            <a href="#missao" class="block text-slate-600 py-2 hover:bg-slate-50 rounded px-2">Missão</a>
+            <a href="#inicio" class="block text-slate-600 py-2 px-2 hover:bg-blue-50">Início</a>
+            <a href="#sobre" class="block text-slate-600 py-2 px-2 hover:bg-blue-50">Sobre</a>
+            <a href="#formacao" class="block text-slate-600 py-2 px-2 hover:bg-blue-50">Formação</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="inicio" class="relative bg-white py-16 lg:py-24 overflow-hidden">
+    <header id="inicio" class="relative bg-white py-16 lg:py-24">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 text-center md:text-left order-2 md:order-1">
-                <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">
+                <span class="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-widest text-blue-700 uppercase bg-blue-50 rounded-full">
                     Educador & Mestre em Letras
                 </span>
                 <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight serif mb-6">
-                    A educação como instrumento de <span class="text-blue-600">transformação social</span>.
+                    A educação como fonte de <span class="text-blue-600">novas realidades</span>.
                 </h1>
                 <p class="text-lg text-slate-600 mb-8 max-w-xl">
-                    Professor de Língua Portuguesa com 30 anos de dedicação ao ensino, transformando vidas através das letras e do conhecimento.
+                    Três décadas transformando o ensino de Língua Portuguesa com paixão, ética e dedicação aos alunos.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                    <a href="#sobre" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all text-center">Minha História</a>
-                    <a href="#contato" class="px-8 py-3 border border-slate-300 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-all text-center">Contato</a>
+                    <a href="#sobre" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all">Minha História</a>
+                    <a href="#contato" class="px-8 py-3 border border-slate-300 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-all">Contato</a>
                 </div>
             </div>
 
-            <!-- Área da Foto -->
+            <!-- Espaço da Imagem -->
             <div class="flex-1 relative order-1 md:order-2">
-                <div class="photo-container w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto bg-slate-200 rounded-2xl rotate-3 shadow-2xl overflow-hidden border-8 border-white relative z-10">
-                    <!-- 
-                        DICA: Coloque o link da sua imagem no 'src' abaixo. 
-                        Exemplo: src="foto-francinaldo.jpg" 
-                    -->
-                    <img src="franfra.jpg" alt="Prof. Francinaldo Aprígio">
+                <div class="photo-frame w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto bg-slate-200 rounded-3xl rotate-3 shadow-2xl overflow-hidden border-8 border-white relative z-10">
+                    <!-- ARQUIVO SOLICITADO ABAIXO -->
+                    <img src="franfra.jpg" alt="Prof. Francinaldo Aprígio" onerror="this.parentElement.innerHTML='<div class=\'flex items-center justify-center h-full text-slate-400\'>Foto: franfra.jpg</div>'">
                 </div>
-                <!-- Elementos Decorativos -->
-                <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-                <div class="absolute -top-6 -right-6 w-24 h-24 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                <!-- Círculos Decorativos -->
+                <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-100 rounded-full blur-2xl opacity-60"></div>
+                <div class="absolute -top-4 -right-4 w-20 h-20 bg-indigo-100 rounded-full blur-2xl opacity-60"></div>
             </div>
         </div>
     </header>
 
     <!-- Sobre Section -->
     <section id="sobre" class="py-20 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold serif">Trajetória e Valores</h2>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold serif">Trajetória Profissional</h2>
                 <div class="accent-line mx-auto"></div>
             </div>
-            <div class="prose prose-lg mx-auto text-slate-600 leading-relaxed space-y-6">
-                <p>
-                    Francinaldo Aprígio dos Santos construiu sua história com base nos valores de uma família simples, acreditando no poder da educação como base fundamental para a mudança.
-                </p>
-                <div class="grid md:grid-cols-2 gap-8 my-12 text-left">
-                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
-                        <i class="fas fa-clock text-blue-500 text-3xl mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">30 Anos de Carreira</h3>
-                        <p class="text-sm">Três décadas de compromisso ininterrupto com o ensino público.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
-                        <i class="fas fa-book-reader text-blue-500 text-3xl mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">Compromisso Real</h3>
-                        <p class="text-sm">Busca constante por novas metodologias de ensino.</p>
-                    </div>
-                </div>
-            </div>
+            <p class="text-center text-slate-600 text-lg leading-relaxed">
+                Com uma carreira consolidada em 30 anos de magistério, o Prof. Francinaldo dedica-se a levar o conhecimento da Língua Portuguesa de forma clara e acessível, sempre acreditando que a educação é o caminho para a cidadania plena.
+            </p>
         </div>
     </section>
 
     <!-- Contato Section -->
     <section id="contato" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold serif mb-10">Conecte-se comigo</h2>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="#" class="flex items-center gap-3 px-6 py-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200">
-                    <i class="fab fa-linkedin text-blue-600 text-2xl"></i>
-                    <span class="font-medium">LinkedIn</span>
+            <h2 class="text-2xl font-bold serif mb-8">Vamos conversar?</h2>
+            <div class="flex justify-center gap-6">
+                <a href="#" class="p-4 bg-slate-50 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-all">
+                    <i class="fab fa-linkedin-in text-xl"></i>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-6 py-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200">
-                    <i class="fas fa-envelope text-red-500 text-2xl"></i>
-                    <span class="font-medium">E-mail</span>
+                <a href="#" class="p-4 bg-slate-50 rounded-full text-red-500 hover:bg-red-500 hover:text-white transition-all">
+                    <i class="far fa-envelope text-xl"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-white border-t border-slate-200">
+    <footer class="py-8 bg-white border-t border-slate-200">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <p class="text-slate-500 text-sm">
-                &copy; <span id="year"></span> Francinaldo Aprígio dos Santos. Todos os direitos reservados.
+                &copy; <span id="year"></span> Francinaldo Aprígio dos Santos.
             </p>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
-        // Executar após o carregamento completo do DOM
-        window.onload = function() {
-            // Atualizar Ano no Rodapé de forma segura
-            const yearSpan = document.getElementById('year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
+        // Função para rodar o script apenas após o carregamento da página
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Atualiza o ano no rodapé
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
             }
 
-            // Menu Mobile Toggle
-            const mobileBtn = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            if (mobileBtn && mobileMenu) {
-                mobileBtn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    mobileMenu.classList.toggle('hidden');
+            // 2. Menu Mobile
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() {
+                    menu.classList.toggle('hidden');
                 });
-
-                // Fechar menu ao clicar fora
-                document.addEventListener('click', function() {
-                    mobileMenu.classList.add('hidden');
+                
+                // Fecha o menu ao clicar em um link
+                menu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => menu.classList.add('hidden'));
                 });
             }
-        };
+        });
     </script>
 </body>
 </html>
